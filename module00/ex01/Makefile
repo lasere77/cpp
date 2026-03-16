@@ -1,21 +1,9 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: mcolin <mcolin@student.42.fr>              +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/11/20 21:59:30 by mcolin            #+#    #+#              #
-#    Updated: 2026/03/05 09:35:05 by mcolin           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 CC = c++
 NAME = a.out
 SRCS_DIR = srcs/
 SOURCES =	$(SRCS_DIR)main.cpp			\
-			$(SRCS_DIR)phoneBook.cpp	\
-			$(SRCS_DIR)contact.cpp		\
+			$(SRCS_DIR)PhoneBook.cpp	\
+			$(SRCS_DIR)Contact.cpp		\
 
 OBJ_DIR = .build/
 OBJS = $(SOURCES:$(SRCS_DIR)%.cpp=$(OBJ_DIR)%.o)

@@ -1,8 +1,11 @@
-#include "phoneBook.hpp"
-#include "contact.hpp"
+#include "PhoneBook.hpp"
+#include "Contact.hpp"
 
+#include <cstddef>
 #include <iostream>
 #include <iomanip>
+#include <ostream>
+#include <string>
 #include <sys/types.h>
 
 PhoneBook::PhoneBook()
@@ -24,6 +27,9 @@ static inline void	display_in_array(size_t index)
 
 void	display_in_array(std::string str)
 {
+	for (size_t i = 0; str[i]; i++)
+		if (str[i] == '\t')
+			str[i] = ' ';
 	if (str.length() > DISPLAY_ARRAY_LEN)
 		std::cout << std::setw(DISPLAY_ARRAY_LEN) << str.substr(0, DISPLAY_ARRAY_LEN - 1) + "." << "|";
 	else
@@ -38,7 +44,7 @@ void	PhoneBook::display()
 	display_in_array("Last name");
 	display_in_array("Nickname");
 	std::cout << std::endl;
-	for (size_t i = 0; i <= register_contact - 1; i++)
+	for (int i = 0; i <= register_contact - 1; i++)
 	{
 		std::cout << "|";
 		display_in_array(i);

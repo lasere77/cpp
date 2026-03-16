@@ -1,6 +1,6 @@
 #pragma once
 
-#include "contact.hpp"
+#include "Contact.hpp"
 
 #define MAX_CONTACT 8
 #define DISPLAY_ARRAY_LEN 10

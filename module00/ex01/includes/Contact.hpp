@@ -1,6 +1,6 @@
 #pragma once
 
-#include "contact.hpp"
+#include "Contact.hpp"
 #include <string>
 
 class Contact
