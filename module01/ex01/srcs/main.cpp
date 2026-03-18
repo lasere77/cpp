@@ -1,7 +1,7 @@
 #include "Zombie.hpp"
 #include <iostream>
 
-#define NB_ZOMBIE 10
+#define NB_ZOMBIE 130
 
 int	main(void)
 {

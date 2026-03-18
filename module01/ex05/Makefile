@@ -6,7 +6,7 @@
 #    By: mcolin <mcolin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/20 21:59:30 by mcolin            #+#    #+#              #
-#    Updated: 2026/03/11 19:53:44 by mcolin           ###   ########.fr        #
+#    Updated: 2026/03/18 18:06:28 by mcolin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,6 @@ clean:
 
 re: fclean all
 
-.PHONY: all bonus fclean clean re gdb
+.PHONY: all fclean clean re gdb
 
 -include $(DEPS)

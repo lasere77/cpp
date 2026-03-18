@@ -13,7 +13,7 @@ void	Harl::complain(std::string level)
 	const char *enum_str[PTR_FUNC_END] = { "INVALID", "DEBUG", "INFO", "WARNING", "ERROR" };
 	/*Array designators are a C99 extension. THANKSSSSSS.... c is better...*/
 	const ptr_func a[PTR_FUNC_END] = { &Harl::invalid_func, &Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
-	int	index;
+	size_t	index;
 
 	index = 0;
 	for (size_t i = 0; i < PTR_FUNC_END  && level.compare(enum_str[i]); i++)

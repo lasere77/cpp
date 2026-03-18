@@ -6,7 +6,7 @@
 #include <ostream>
 #include <string>
 
-#define INVALID_MSG "'every one is gay' kurt"
+#define INVALID_MSG "'everyone is gay' kurt"
 #define DEBUG_MSG "I love having extra bacon for my \
 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!"
 #define INFO_MSG "I cannot believe adding extra bacon costs more money. \
@@ -18,7 +18,7 @@ years, whereas you started working here just last month."
 void	Harl::complain(std::string level)
 {
 	const char	*enum_str[PTR_FUNC_END] = { "DEBUG", "INFO", "WARNING", "ERROR" };
-	int			index;
+	size_t		index;
 
 	index = 0;
 	for (size_t i = 0; i < PTR_FUNC_END && level.compare(enum_str[i]); i++)
