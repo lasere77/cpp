@@ -6,7 +6,7 @@
 #    By: mcolin <mcolin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/20 21:59:30 by mcolin            #+#    #+#              #
-#    Updated: 2026/03/19 09:43:30 by mcolin           ###   ########.fr        #
+#    Updated: 2026/03/19 19:02:35 by mcolin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ SRCS_DIR := srcs
 SOURCES :=	$(SRCS_DIR)/main.cpp		\
 			$(SRCS_DIR)/Fixed.cpp		\
 			$(SRCS_DIR)/Point.cpp		\
+			$(SRCS_DIR)/bsp.cpp			\
 
 OBJ_DIR := .build
 OBJS := $(SOURCES:$(SRCS_DIR)/%.cpp=$(OBJ_DIR)/%.o)
