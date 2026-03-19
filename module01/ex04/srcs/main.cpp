@@ -8,7 +8,7 @@ std::string	replace(std::string str, std::string s1, std::string s2)
 	size_t		p;
 
 	p = str.find(s1);
-	if (p == std::string::npos)
+	if (p == std::string::npos || s1.empty())
 		return (str);
 	while (p != std::string::npos)
 	{
@@ -21,6 +21,7 @@ std::string	replace(std::string str, std::string s1, std::string s2)
 	result.append(str.substr(0, str.length()));
 	return (result);
 }
+
 
 int main(int argc, char **argv)
 {

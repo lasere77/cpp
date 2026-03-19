@@ -10,7 +10,7 @@ class Zombie
 		static Zombie	*zombieHorde(int N, std::string name);
 		void			announce(void);
 
-		std::string		get_name();
+		const std::string	&get_name() const;
 
 
 	private:
