@@ -5,15 +5,16 @@
 class Point
 {
 	public:
+		Point();
 		Point(Fixed x, Fixed y);
+		Point &operator=(const Point &copy);
+		Point(const Point &copy);
+		~Point();
 		
-		Fixed	&get_x();
-		Fixed	&get_y();
-
-		void	set_x(Fixed	x);
-		void	set_y(Fixed	y);
+		const Fixed	&get_x() const;
+		const Fixed	&get_y() const;
 
 	private:
-		Fixed	x;
-		Fixed	y;
+		Fixed const	x;
+		Fixed const	y;
 };
